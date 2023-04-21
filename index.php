@@ -44,6 +44,7 @@
 
             $mail->send();
             echo 'Письмо было отправлено';
+            header('location: /');
         } catch (Exception $e) {
             echo "Письмо не было отправлено...";
         }
